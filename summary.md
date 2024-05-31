@@ -23,3 +23,9 @@
 - docker volume prune (delete unused volumes)
 - sudo docker run -d --rm -p 3000:8000 --env PORT=8000 --name feedback-app -v feedback:/app/feedback -v /home/muyiwa_3n61n3/DOCKER_TUT/volumes-docker:/app/volumes-docker:ro -v /app/temp feedback-app:env (without an env file)
 - sudo docker run -d --rm -p 3000:8000 --env-file ./.env --name feedback-app -v feedback:/app/feedback -v /home/muyiwa_3n61n3/DOCKER_TUT/volumes-docker:/app/volumes-docker:ro -v /app/temp feedback-app:env (with an env file)
+- sudo docker container inspect mongodb (container)
+- sudo docker container prune (remove all unsused containers)
+
+### NETWORK COMMANDS 
+- sudo docker ls (list network)
+- sudo docker run -d --name mongodb --network favourites-net mongo
