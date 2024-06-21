@@ -6,6 +6,8 @@
 - docker ps
 - docker ps -a
 - docker stop name
+- docker images
+- docker login
 - docker build -t feedback-node
 - docker run -p 3000:80 -d  --name feedback-app --rm feedback-node
 - docker stop feedback-new-app (container)
